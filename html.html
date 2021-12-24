@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблица студентов</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="head"><!-- Кнопка добавления нового студента -->
+    <h3><p style="text-align:center">Список студентов: &nbsp&nbsp;
+        <button type="button" class="add">Добавить</button></p></h3><br>
+</div>
+
+<div><!-- Таблица студентов -->
+    <table>
+        <thead>
+        <tr>
+            <th>Номер</th>
+            <th>Ф.И.О.</th>
+            <th>Группа</th>
+            <th>Телефон</th>
+            <th>E-mail</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody id="table">
+        </tbody>
+    </table>
+</div>
+
+<div id="remove">        <!-- Форма удаления -->
+    <div class="form-rm">
+        <div>
+            <h4>Вы действительно хотите удалить студента?</h4>
+            <button type="button" class="btn-close" data-id="remove">х</button>
+        </div>
+        <div align="center";>
+            <button type="button" class="submit" data-func="remove">Удалить</button> &nbsp;&nbsp;
+            <button type="button" class="close" data-id="remove">Отмена</button>
+        </div>
+    </div>
+</div>
+
+<div id="edit">    <!-- Форма добавления и изменения -->
+    <div class=form-edit>
+        <div>
+            <h4 class="title"></h4>
+            <button type="button" class="btn-close" data-id="edit">х</button>
+        </div>
+        <form>
+            <input type="hidden" id="Id" value="-1">
+            <div>
+                <label for="name"></label>
+                <input type="tel" id="name" placeholder="Ф.И.О">
+            </div>
+            <div>
+                <label for="group"></label>
+                <input type="tel" id="group" placeholder="Номер группы">
+            </div>
+            <div>
+                <label for="phone"></label>
+                <input type="tel" id="phone" placeholder="Номер телефона">
+            </div>
+            <div>
+                <label for="email"></label>
+                <input type="tel" id="email" placeholder="E-mail">
+            </div>
+            <div align="center";>
+                <button type="button" class="submit" data-func="submit">Сохранить</button>
+                <button type="button" class="close" data-id="edit">Отмена</button> &nbsp;&nbsp;
+            </div>
+        </form>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>Таблица участников</title>
+</head>
+<body>
+  <div class="head">
+      <h3>Список студентов</h3>
+      <input name="button" type="button" class="add" value="Добавить"/>
+  </div>
+  <table>
+      <thead>
+      <tr>
+         <th>ФИО</th>
+         <th>Телефон</th>
+         <th>Почта</th>
+         <th>Группа</th>
+         <th></th>
+      </tr>
+      </thead>
+      <tbody id="table">
+      </tbody>
+  </table>
+<div id="edit";  class="form-edit" style="display:none" acyion="">
+  <form>
+    <input name="button" type="button" class="btn-close" value="х" />
+    <h3>Информация о студенте</h3>
+    <input id="name"name="text" type="text" value="" placeholder="Ф.И.О" /><br />
+    <input id="nomber"name="nomber" type="nomber" value="" placeholder="Номер телефона"/><br />
+    <input id="email"name="email" type="email" value="" placeholder="E-mail" /><br />
+    <input id="group"name="group" type="text" value="" placeholder="Группа"/><br />
+    <input name="button" type="button" class='submit'value="Добавить" />
+    <input name="button" type="reset" value="Очистить"/>
+  </form>
+</div>
+    <div id="edit"; class="form-edit" style="display:none" acyion="">
+    <form>
+        <input name="button" type="button" class="btn-close" value="х" />
+        <h3>Информация о студенте</h3>
+        <input name="text" type="text" value="" placeholder="Ф.И.О" /><br />
+        <input name="nomber" type="nomber" value="" placeholder="Номер телефона"/><br />
+        <input name="email" type="email" value="" placeholder="E-mail" /><br />
+        <input name="group" type="text" value="" placeholder="Группа"/><br />
+    <input name="button" type="button" class='submit'value="Изменить" />
+    </form>
+    </div>
+    <div id="remove" class="form-rm" >
+        <input name="button" type="button" class="btn-close" value="х" />
+        <h3 align ="center">Вы действительно хотите удалить данные?</h3>
+        <input name="button" type="button" class="submit" value="Да" />
+        <input name="button" type="button" class="close" value="Нет" />
+    </div>
+<script src="main.js"></script>
+</body>
+</html>-->

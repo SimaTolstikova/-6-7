@@ -1,0 +1,144 @@
+body {
+  margin:0;
+  padding:0;
+  background-color: #fff;
+  font-family: sans-serif; /* шрифт, семейство шрифтов */
+}
+
+table, td {
+  background-color: #fff;
+  table-layout: fixed;
+  width: 98%;
+  text-align: center; /* выравнивание текста */
+  padding: 3px; /* отступ между краями элемента и его содержимым */
+  border: 1px outset black; /* рамка вокруг элемента */
+  border-collapse: collapse; /* устанавливает, как отображать границы вокруг ячеек таблицы */
+  margin: 10px auto; /* устанавливает величину отступа от каждого края элемента */
+}
+table{
+  border-radius: 12px;
+}
+
+th {
+  height: 50px;
+  text-align: center; /* выравнивание текста */
+  background-color: #fff;
+  border: 1px outset black; /* рамка вокруг элемента */
+  border-collapse: collapse; /* устанавливает, как отображать границы вокруг ячеек таблицы */
+}
+
+.head {
+  height: 40px;
+}
+
+input {
+  width: 80%;
+  margin: 10px 0;
+  padding: 5px;
+}
+
+.select {
+  width: 84%;
+  margin: 10px 0;
+  padding: 5px;
+}
+
+.form-edit {
+  width: 300px;
+  border: 1px outset black;
+  display: table; /* свойство, которое определяет, как элемент должен быть показан в документе */
+  padding: 13px; /* отступ между краями элемента и его содержимым */
+  margin: 10px 10px; /* величина отступа от каждого края элемента */
+  border-radius: 12px; /* скругляет углы рамки */
+  background-color: #fff;
+}
+
+.form-rm {
+  width: 88%;
+  border: 1px outset black;
+  display: table; /* свойство, которое определяет, как элемент должен быть показан в документе */
+  padding: 20px; /* отступ между краями элемента и его содержимым */
+  margin: 10px 10px; /* величина отступа от каждого края элемента */
+  border-radius: 12px; /* скругляет углы рамки */
+  background-color: #fff;
+}
+
+/*.add {                   !* Кнопка добавить *!
+  width: 12%;
+  background-color: #fff;
+  margin: 0 5px;
+  padding: 7px 25px;
+  border: 3px solid black;
+  border-radius: 3px;
+  cursor: pointer;
+}*/
+
+.edit {                  /* Кнопка изменить */
+  width: 43%;
+  background-color: #fff;
+  margin: 0 5px;
+  padding: 6px 25px;
+  border: 1px solid black;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.rm {                     /* Кнопка удалить */
+  width: 43%;
+  background-color: #fff;
+  padding: 6px 25px;
+  border: 1px solid black;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.close {                /* Кнопки отмены в формах */
+  width: 43%;
+  background-color: #fff;
+  padding: 6px 25px;
+  border: 1px solid black;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.submit {            /* Кнопки удалить и сохранить в формах */
+  width: 43%;
+  background-color: #fff;
+  padding: 6px 25px;
+  border: 1px solid black;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-close {            /* Крестик удаления в формах */
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  background-color: #fff;
+  padding: 3px 7px;
+  border: 1px solid black;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#edit {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top:50%;
+  left:52%;
+  width: 350px;
+  height: 440px;
+  margin:-200px 0 0 -200px;
+}
+
+#remove {
+  display: none;
+  position: absolute;
+  z-index: 3;
+  top:55%;
+  left:51%;
+  width: 350px;
+  height: 170px;
+  margin:-200px 0 0 -200px;
+}
